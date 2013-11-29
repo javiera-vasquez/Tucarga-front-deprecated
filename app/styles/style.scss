@@ -1,0 +1,41 @@
+// Import compass :all
+@import "compass";
+
+// Import foundation
+@import "settings";
+@import "../bower_components/foundation/scss/foundation";;
+
+// I know this the rest of the file should be another file
+// Basic setting
+
+@mixin left {@include float-left;}
+@mixin right {@include float-right;}
+@mixin clear {@include clearfix;}
+@mixin none {display: none;}
+
+.none {@include none;}
+.clear {clear: both;}
+.clearfix {@include clearfix;}
+
+// Variables
+$white: #fff;
+$include-open-sans: false !default;
+$basic-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+
+// Header
+#header {
+    box-shadow: $basic-box-shadow;
+    .top-bar-section {
+        a.active {
+            font-weight: bold;
+            color: $primary-color;
+        }
+        .dropdown {
+             box-shadow: $basic-box-shadow;
+        }
+    }
+}
+
+#intro-section {
+    background-color: $primary-color;
+}
