@@ -5,7 +5,7 @@
 @import "settings";
 @import "../bower_components/foundation/scss/foundation";;
 
-// I know this the rest of the file should be another file
+// I know the rest of this file if should be another dependence
 // Basic setting
 
 @mixin left {@include float-left;}
@@ -19,8 +19,11 @@
 
 // Variables
 $white: #fff;
+$ccc: #ccc;
+
 $include-open-sans: false !default;
 $basic-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+$shadow : rgba(0, 0, 0, 0.4);
 
 // Header
 #header {
@@ -33,19 +36,111 @@ $basic-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
         .dropdown {
              box-shadow: $basic-box-shadow;
         }
+        .add-work {
+            margin-right: 10px;
+            color: $white;
+            padding: rem-calc(9) rem-calc(16) rem-calc(10);
+            font-size: rem-calc(13);
+            background:$secondary-color;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 -2px 0 darken($secondary-color, 5%);
+            &:hover {
+                background: darken($secondary-color, 2%);
+                box-shadow: inset 0 -2px 0 darken($secondary-color, 10%);
+            }
+        }
     }
 }
 
 #intro-section {
     background-color: $primary-color;
     padding: 0 1em;
+    height: 90px;
+    margin-bottom: 20px;
     .bread-local {
+        margin-top: 22px;
         h3 {
             color: $white;
-            text-shadow: 0 1px 2px darken($primary-color, 20px);
+            text-shadow: 0 1px 2px darken($primary-color, 15%);
         }
     }
     .tool-view {
-
+        margin-top: 22px;
+        li {
+            a {
+                color: $white;
+                font-size: rem-calc(14);
+                text-shadow: 0 1px 1px darken($primary-color, 15%);
+            }
+            .label {
+                position: relative;
+                border-radius: 3px;
+                background: $secondary-color;
+                border: 1px solid $primary-color;
+                right: -60px;
+                top: -30px;
+                width: 25px;
+                height: 20px;
+            }
+        }
+        .prospect {
+            margin-top: 13px;
+            margin-right: 10px;
+            &:hover {text-decoration: underline;}
+            .active {
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+    .button.add {
+        padding: rem-calc(12) rem-calc(17);
+        background: lighten($primary-color, 3%);
+        border: 1px solid darken($primary-color, 10%);
+        box-shadow: inset 0 -1px 0 darken($primary-color, 6%);
+        &:hover {
+            background: lighten($primary-color, 6%);
+            box-shadow: inset 0 -1px 0 darken($primary-color, 10%);
+        }
     }
 }
+
+#user-loop {
+    .user {
+        border-bottom: 1px dashed darken($body-bg, 30%);
+        padding: rem-calc(10);
+        .config {
+            padding: rem-calc(5) rem-calc(9);
+            font-size: rem-calc(13px);
+            background: $secondary-color;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+        }
+        &:hover {
+            background: $white;
+            border-bottom: 1px solid $white;
+            box-shadow: 0 1px 2px $shadow;
+        }
+    }
+    h6 {
+        font-weight: bold;;
+        font-size: rem-calc(12px);
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    ul {
+        margin-bottom: 10px;
+        li {
+            font-size: rem-calc(13px);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
