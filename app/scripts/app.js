@@ -1,4 +1,6 @@
-var YoEmber = window.YoEmber = Ember.Application.create();
+var YoEmber = window.YoEmber = Ember.Application.create({
+    LOG_TRANSITIONS: true
+});
 
 /* Order and include as you please. */
 require('scripts/controllers/*');
