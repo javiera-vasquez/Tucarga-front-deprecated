@@ -1,4 +1,5 @@
-YoEmber.Transportista = DS.Model.extend({
+// Transportista
+YoEmber.Validados = DS.Model.extend({
     name:   DS.attr(),
     rut: DS.attr(),
     label: DS.attr(),
@@ -11,7 +12,7 @@ YoEmber.Transportista = DS.Model.extend({
     city: DS.attr()
 });
 
-YoEmber.Transportista.FIXTURES = [{
+YoEmber.Validados.FIXTURES = [{
     id: 1,
     name: 'Super duper emprresa',
     rut: '16.123.435-8',
@@ -84,20 +85,3 @@ YoEmber.Transportista.FIXTURES = [{
     commune: 'Las condes',
     city: 'Santiago'
 }]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

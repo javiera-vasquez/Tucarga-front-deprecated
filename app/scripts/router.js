@@ -28,8 +28,4 @@ YoEmber.Router.map(function () {
 
 });
 
-YoEmber.TransportistaRoute = Em.Route.extend({
-    redirect: function(){
-        this.transitionTo('validados');
-    }
-});
+
