@@ -5,16 +5,17 @@ YoEmber.Router.map(function () {
     //Directorio transportistas
     this.resource('directorio');
 
+    // Log-in
+    this.resource('iniciar-sesion');
+
     // Registro de usuario
-    this.resource('registro', function{
-        this.route('create');
-    });
+    this.resource('registrar');
 
     // Nosotros
     this.resource('nosotros', function(){
-        this.rosource('contacto'):
-        this.rosource('preguntas-frecuentes'):
-        this.rosource('como-funciona'):
+        this.resource('contacto');
+        this.resource('faq');
+        this.resource('como-funciona');
     });
 });
 
