@@ -13,7 +13,6 @@ Tucarga is a marketplace of transport, this is a really basic test of the site r
 
 #### Install
 
-    Checkout
     npm install
     bower install
     grunt server
