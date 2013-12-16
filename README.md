@@ -1,9 +1,20 @@
-Ember-yeoman
-============
+== Welcome to Tucarga Frontend
 
-How to install
+Tucarga is a marketplace of transport, this is a really basic test of the site runing whit ember and yeoman.
 
-Checkout <br/>
-npm install
-bower install
-grunt server
+== How to install
+
+= Prerequisites
+
+* Node.js
+* Bower
+* Grunt
+* Yeoman
+
+= Install
+
+* Checkout
+* npm install
+* bower install
+* grunt server
+* Enjoy!
