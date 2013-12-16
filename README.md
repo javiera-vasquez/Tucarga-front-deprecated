@@ -3,7 +3,7 @@ Ember-yeoman
 
 How to install
 
-Checkout
+Checkout <br/>
 npm install
 bower install
 grunt server
