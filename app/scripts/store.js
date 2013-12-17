@@ -1,2 +1,2 @@
-YoEmber.Store = DS.Store.extend();
-YoEmber.ApplicationAdapter = DS.FixtureAdapter;
+App.Store = DS.Store.extend();
+App.ApplicationAdapter = DS.FixtureAdapter;

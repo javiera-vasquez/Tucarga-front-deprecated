@@ -1,4 +1,4 @@
-YoEmber.Router.map(function () {
+App.Router.map(function () {
     // Inicio
     this.resource('index', { path: '/' });
 

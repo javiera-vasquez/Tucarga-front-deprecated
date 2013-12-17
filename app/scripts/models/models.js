@@ -1,11 +1,11 @@
 // Filtros de transportista
-YoEmber.Filters = DS.Model.extend({
+App.Filters = DS.Model.extend({
     from : DS.attr(),
     to : DS.attr(),
     type : DS.attr()
 });
 
-YoEmber.Filters.FIXTURES = [{
+App.Filters.FIXTURES = [{
     id: 1,
     from: ["Yehuda", "Tom"],
     to: ["Yehuda", "Tom"],
@@ -13,14 +13,14 @@ YoEmber.Filters.FIXTURES = [{
 }];
 
 // Listado de transportista
-YoEmber.Transportistas = DS.Model.extend({
+App.Transportistas = DS.Model.extend({
     name: DS.attr(),
     zone: DS.attr(),
     city: DS.attr(),
     suply: DS.attr()
 });
 
-YoEmber.Transportistas.FIXTURES = [{
+App.Transportistas.FIXTURES = [{
     id: 1,
     name: 'Super duper emprresa',
     zone: 'Centro',

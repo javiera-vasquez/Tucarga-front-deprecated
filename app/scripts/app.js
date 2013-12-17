@@ -1,4 +1,4 @@
-var YoEmber = window.YoEmber = Ember.Application.create({
+var App = window.App = Ember.Application.create({
     LOG_TRANSITIONS: true
 });
 
