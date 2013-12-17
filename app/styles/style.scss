@@ -39,25 +39,47 @@ $shadow : rgba(0, 0, 0, 0.4);
         .dropdown {
              box-shadow: $basic-box-shadow;
         }
-        .add-work {
-            margin-right: 10px;
-            color: $white;
-            padding: rem-calc(9) rem-calc(16) rem-calc(10);
-            font-size: rem-calc(13);
-            background:$secondary-color;
-            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-            box-shadow: inset 0 -2px 0 darken($secondary-color, 5%);
-            &:hover {
-                background: darken($secondary-color, 2%);
-                box-shadow: inset 0 -2px 0 darken($secondary-color, 10%);
-            }
-        }
+        .register {margin-right: 15px; }
+    }
+}
+
+// Footer
+#footer {
+    margin-top: 2em;
+    border-top: 1px solid $ccc;
+    background: $white;
+}
+
+// Buttons mixin
+.button {
+
+}
+
+.register {
+    margin-right: 10px;
+    color: $white;
+    padding: rem-calc(9) rem-calc(16) rem-calc(10);
+    font-size: rem-calc(13);
+    background:$secondary-color;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -2px 0 darken($secondary-color, 5%);
+    &:hover {
+        background: darken($secondary-color, 2%);
+        box-shadow: inset 0 -2px 0 darken($secondary-color, 10%);
     }
 }
 
 // Content page
 #content-page {
     margin-top: 2em;
+}
+
+// Tranportistas
+.title-page {
+    h3 {
+        font-size: rem-calc(24);
+        line-height: 1;
+    }
 }
 
 .loop-list {
