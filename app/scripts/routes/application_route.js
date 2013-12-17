@@ -5,3 +5,14 @@ App.DirectorioRoute = Ember.Route.extend({
   }
 });
 
+App.DirectorioController = Em.ArrayController.extend({
+  usersCount: function(){
+    return this.get('model.length');
+  }.property('@each')
+});
+
+// Contar modelo
+//  usersCount: function(){
+//    return this.get('model.length');
+//  }.property('@each')
+// });

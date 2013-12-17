@@ -11,6 +11,9 @@ App.Router.map(function () {
     // Registro de usuario
     this.resource('registrar');
 
+    // Cotizar
+    this.resource('cotizar');
+
     // Nosotros
     this.resource('nosotros', function(){
         this.resource('contacto');

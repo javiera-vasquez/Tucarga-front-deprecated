@@ -7,9 +7,18 @@ App.Filters = DS.Model.extend({
 
 App.Filters.FIXTURES = [{
     id: 1,
-    from: ["Yehuda", "Tom"],
-    to: ["Yehuda", "Tom"],
-    type: ["Yehuda", "Tom"]
+    from: [
+        "Yehuda",
+        "Tom"
+    ],
+    to: [
+        "Yehuda",
+        "Tom"
+    ],
+    type: [
+        "Yehuda",
+        "Tom"
+    ]
 }];
 
 // Listado de transportista
