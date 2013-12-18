@@ -1,15 +1,37 @@
 <div id="content-page" class="row">
 
-    <div id="sidebar" class="large-3 columns">
-        <div class="filters">
+    <div id="sidebar" class="large-4 columns">
+        <div class="box filters">
+            <div>
+                <h4>Desde</h4>
+                <select>
+                    <option value="husker">Husker</option>
+                    <option value="starbuck">Starbuck</option>
+                    <option value="hotdog">Hot Dog</option>
+                    <option value="apollo">Apollo</option>
+                </select>
+                <h4>Hasta</h4>
+                <select>
+                    <option value="husker">Husker</option>
+                    <option value="starbuck">Starbuck</option>
+                    <option value="hotdog">Hot Dog</option>
+                    <option value="apollo">Apollo</option>
+                </select>
+                <h4>Tipo de carga</h4>
+                <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label><br />
+                <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+            </div>
         </div>
-        <div class="asdf">
-            <p>Sumate a la red de transporte mas grande de Chile y ve como aumenta <strong>Tucarga</strong></p>
-            <p>{{#link-to "registrar" classNames='button radius add-work'}}Registrate{{/link-to}}</p>
+
+        <div class="box register">
+            <div>
+                <p>Sumate a la red de transporte mas grande de Chile y ve como aumenta <strong>Tucarga</strong></p>
+                <p>{{#link-to "registrar" classNames='button radius add-work'}}Registrate{{/link-to}}</p>
+            </div>
         </div>
     </div> <!-- end sidebar -->
 
-    <div id="content-view" class="large-9 columns">
+    <div id="content-view" class="large-8 columns">
         <div class="title-page clearfix">
             <div class="left">
                 <h3>Directorio de transporte</h3>

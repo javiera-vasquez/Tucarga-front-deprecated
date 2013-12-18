@@ -5,10 +5,18 @@ App.Filters = DS.Model.extend({
     type : DS.attr()
 });
 
+// Listado de transportista
+App.Transportistas = DS.Model.extend({
+    name: DS.attr(),
+    zone: DS.attr(),
+    city: DS.attr(),
+    suply: DS.attr()
+});
+
 App.Filters.FIXTURES = [{
     id: 1,
     from: [
-        "Yehuda",
+        "asdf",
         "Tom"
     ],
     to: [
@@ -20,14 +28,6 @@ App.Filters.FIXTURES = [{
         "Tom"
     ]
 }];
-
-// Listado de transportista
-App.Transportistas = DS.Model.extend({
-    name: DS.attr(),
-    zone: DS.attr(),
-    city: DS.attr(),
-    suply: DS.attr()
-});
 
 App.Transportistas.FIXTURES = [{
     id: 1,
