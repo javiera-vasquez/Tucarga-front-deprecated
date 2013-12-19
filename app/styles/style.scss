@@ -13,6 +13,10 @@
 @mixin clear {@include clearfix;}
 @mixin none {display: none;}
 
+@mixin bold {font-weight: bold;}
+@mixin normal {font-weight: normal;}
+@mixin light {font-weight: 300;}
+
 .none {@include none;}
 .clear {clear: both;}
 
@@ -25,8 +29,8 @@ $lvl2: #898989;
 $header-font-family: $body-font-family;
 
 $include-open-sans: false !default;
-$basic-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-$shadow : rgba(0, 0, 0, 0.4);
+$basic-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+$shadow : rgba(0, 0, 0, 0.2);
 
 // Header
 #header {
@@ -55,8 +59,8 @@ $shadow : rgba(0, 0, 0, 0.4);
     background: $bg-color;
     color: $text-color;
     font-size: rem-calc($size);
-    box-shadow: inset 0 -2px 0 darken($bg-color, 10%);
-    padding: rem-calc(12) rem-calc($padding) rem-calc(13);
+    box-shadow: inset 0 -2px 0 darken($bg-color, 20%);
+    padding: rem-calc(11) rem-calc($padding) rem-calc(12);
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
     &:hover {
         background: darken($bg-color, 5%);
@@ -64,20 +68,13 @@ $shadow : rgba(0, 0, 0, 0.4);
     }
 }
 
-.button {@include basic-button;}
-
-.registerbtn {
-    margin-right: 10px;
-    color: $white;
-    padding: rem-calc(9) rem-calc(16) rem-calc(10);
-    font-size: rem-calc(13);
-    background:$secondary-color;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-    box-shadow: inset 0 -2px 0 darken($secondary-color, 5%);
-    &:hover {
-        background: darken($secondary-color, 2%);
-        box-shadow: inset 0 -2px 0 darken($secondary-color, 10%);
-    }
+.button {
+    @include basic-button(
+        #1e84d3,
+        $white,
+        15,
+        35
+        );
 }
 
 // Content page
@@ -110,17 +107,37 @@ $shadow : rgba(0, 0, 0, 0.4);
 
 }
 
-.box-register {
-
+// Ad's
+.box.cotiza-ad {
+    color: lighten($primary-color, 5%);
+    background: lighten($body-bg, 5%);
+    h3 {
+        color: lighten($primary-color, 5%);
+        margin: -3px 0 0;
+    }
+    p {
+        font-size: rem-calc(14);
+        margin: 0;
+    }
+    i {
+        font-size: rem-calc(70);
+        margin: 0.13em 0.25em 0;
+    }
+    &:hover {
+        background: $white;
+        i, p, h3 {color: $primary-color;}
+    }
 }
+
+.box.register {}
 
 // Tranportistas
 .loop-list {
     border-bottom: 1px solid $ccc;
     padding: 0.5em 0 1em;
-    h4 {
+    h5 {
         font-size: rem-calc(18);
-        margin-bottom: 0;
+        margin-bottom: -2px;
     }
     ul {
         margin: 0;
@@ -128,11 +145,14 @@ $shadow : rgba(0, 0, 0, 0.4);
             @include left;
             list-style: none;
             width: 33%;
-            font-size: rem-calc(14);
             span {
                 font-size: rem-calc(11);
                 text-transform: uppercase;
                 color: $lvl2;
+            }
+            p {
+                margin: -5px 0 0;
+                font-size: rem-calc(14);
             }
         }
     }
