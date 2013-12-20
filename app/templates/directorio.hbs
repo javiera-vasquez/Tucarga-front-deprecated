@@ -71,24 +71,29 @@
             {{/each}}
         </div> {{! end loop }}
 
-        {{#link-to "cotizar"}}
-        <div class="box cotiza-ad">
-            <div class="margin clearfix">
-                <div class="left">
-                    <h3>Te ayudamos a elegir</h3>
-                    <p>En Tucarga estamos comprometidos en brindarte la mejor solución de transporte</p>
+
+        <a id="ad-loop" class="" href="#/cotizar">
+            <div class="box cotiza-ad">
+                <div class="margin clearfix">
+                    <div class="left">
+                        <h3>Te ayudamos a elegir</h3>
+                        <p>En Tucarga estamos comprometidos en brindarte la mejor solución de transporte</p>
+                    </div>
+                    <i class="fi-play right"></i>
                 </div>
-                <i class="fi-play right"></i>
             </div>
-        </div> {{! fin ad}}
-        {{/link-to}}
+        </a>
+
     </div> {{! end content view }}
 
 </div> {{! end content page }}
 
 <script type="text/javascript">
     $(document).ready(function() {
-
+         var loopAd = $('#ad-loop').clone();
+        $('.loop-list:nth-child(3n)').after(loopAd);
     });
 </script>
+
+
 
