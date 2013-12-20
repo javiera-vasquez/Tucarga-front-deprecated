@@ -25,6 +25,7 @@
 $white: #fff;
 $ccc: #d4d5cf;
 $lvl2: #898989;
+$secondary: #1e84d3;
 
 $header-font-family: $body-font-family;
 
@@ -32,27 +33,6 @@ $include-open-sans: false !default;
 $basic-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 $shadow : rgba(0, 0, 0, 0.2);
 
-// Header
-#header {
-    box-shadow: $basic-box-shadow;
-    .top-bar-section {
-        a.active {
-            font-weight: bold;
-            color: $primary-color;
-        }
-        .dropdown {
-             box-shadow: $basic-box-shadow;
-        }
-        .register {margin-right: 15px; }
-    }
-}
-
-// Footer
-#footer {
-    margin-top: 2em;
-    border-top: 1px solid $ccc;
-    background: $white;
-}
 
 // Buttons mixin
 @mixin basic-button($bg-color:$primary-color, $text-color: $white, $size: 14, $padding: 35) {
@@ -70,12 +50,37 @@ $shadow : rgba(0, 0, 0, 0.2);
 
 .button {
     @include basic-button(
-        #1e84d3,
+        $secondary,
         $white,
         15,
         35
         );
 }
+
+
+// Header
+#header {
+    box-shadow: $basic-box-shadow;
+    .top-bar-section {
+        a.active {
+            font-weight: bold;
+            color: $primary-color;
+        }
+        .dropdown {
+             box-shadow: $basic-box-shadow;
+        }
+        .register {margin-right: 15px; }
+    }
+}
+
+
+// Footer
+#footer {
+    margin-top: 2em;
+    border-top: 1px solid $ccc;
+    background: $white;
+}
+
 
 // Content page
 #content-page {
@@ -87,9 +92,9 @@ $shadow : rgba(0, 0, 0, 0.2);
     background: $white;
     box-shadow: $basic-box-shadow;
     margin-bottom: 1.5em;
-    div {
-        margin: 0 1em 1em;
-        padding-top: 1em;
+    div.margin {
+        margin: 0 1em;
+        padding: 1em 0 0.5em;
     }
 }
 
@@ -99,13 +104,18 @@ $shadow : rgba(0, 0, 0, 0.2);
         line-height: 1;
         margin-bottom: 0;
     }
-    .button {}
 }
+
 
 // Sidebar
 .filters {
-
+    h4 {
+        @include bold;
+        text-transform: uppercase;
+        font-size: rem-calc(13);
+    }
 }
+
 
 // Ad's
 .box.cotiza-ad {
@@ -115,13 +125,10 @@ $shadow : rgba(0, 0, 0, 0.2);
         color: lighten($primary-color, 5%);
         margin: -3px 0 0;
     }
-    p {
-        font-size: rem-calc(14);
-        margin: 0;
-    }
+    p { font-size: rem-calc(14);}
     i {
         font-size: rem-calc(70);
-        margin: 0.13em 0.25em 0;
+        margin-top: -5px;
     }
     &:hover {
         background: $white;
@@ -129,7 +136,24 @@ $shadow : rgba(0, 0, 0, 0.2);
     }
 }
 
-.box.register {}
+.box.register {
+    background: $white url('/images/map.jpg') no-repeat center top;
+    p {
+        color: $primary-color;
+        text-align: center;
+        margin-top: 0.5em
+    }
+    .button {
+    margin-bottom: 0;
+    @include basic-button(
+        $secondary-color,
+        $white,
+        15,
+        35
+        );
+    }
+}
+
 
 // Tranportistas
 .loop-list {

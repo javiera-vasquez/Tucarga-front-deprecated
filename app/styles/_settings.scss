@@ -35,7 +35,7 @@ $rem-base: 16px;
 // $total-columns: 12;
 
 // We use these to control various global styles
-$body-bg: #f1f1eb;
+$body-bg: #f9f7ec;
 $body-font-color: #363636;
 $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $body-font-weight: normal;
@@ -338,13 +338,13 @@ $info-color: #a0d3e8;
 
 // We use these to style the labels in different ways
 // $form-label-pointer: pointer;
-// $form-label-font-size: rem-calc(14);
+$form-label-font-size: rem-calc(13);
 // $form-label-font-weight: normal;
 // $form-label-font-color: lighten(#000, 30%);
 // $form-label-bottom-margin: rem-calc(8);
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
-// $input-font-size: rem-calc(14);
+$input-font-size: rem-calc(13);
 // $input-bg-color: #fff;
 // $input-focus-bg-color: darken(#fff, 2%);
 // $input-border-color: darken(#fff, 20%);
