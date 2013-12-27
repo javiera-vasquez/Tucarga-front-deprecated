@@ -1,3 +1,90 @@
-<div class="well">
-    Welcome to Yeoman and Ember.js!
+<div id="intro-index">
+    <div class="row">
+        <div class="large-4 columns bg-loop"></div>
+        <div class="large-8 columns">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+    </div>
+</div> {{! end intro index }}
+
+<div id="como-index">
+    <div class="row">
+        <div class="large-12 columns title-section">
+            <h2>Como funciona</h2>
+            <h4>Solo cuatro pasos para empezar a mover tu negocio</h4>
+        </div>
+
+        <div class="large-3 columns">
+            <img src="/images/step1.jpg" alt="Es gratis">
+            <h4>Cotizar es gratis</h4>
+            <p>No cobramos por utilizar la plataforma</p>
+        </div>
+
+        <div class="large-3 columns">
+            <img src="/images/step2.jpg" alt="Cotiza ahora">
+            <h4>Hace una cotización</h4>
+            <p>Son pocos pasos nosotros nos encargamos del resto</p>
+        </div>
+
+        <div class="large-3 columns">
+            <img src="/images/step3.jpg" alt="Buscar tranportista">
+            <h4>Buscamos a los mejores</h4>
+            <p>Nos encargamos de encontrar los mejores transportistas</p>
+        </div>
+
+        <div class="large-3 columns">
+            <img src="/images/step4.jpg" alt="Elige el mejor">
+            <h4>Elige la mejor oferta</h4>
+            <p>Te enviamos un correo con las mejores ofertas</p>
+        </div>
+    </div>
+</div> {{! end como funciona }}
+
+<div id="beneficios-index">
+    <div class="row">
+        <div class="large-12 columns title-section">
+            <h2>Beneficios que te sirven</h2>
+            <h4>Descubre todo lo que puedes hacer con nosotros</h4>
+        </div>
+
+
+    </div>
+</div> {{! end beneficios }}
+
+<div id="testimonios-index">
+
+</div> {{! end testimonios }}
+
+<div id="ayuda-index">
+
 </div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+       // loop auto rotate
+        var rotateEvery = 3; //seconds
+        var images = [
+            "http://placehold.it/148x148",
+            "http://placehold.it/150x149",
+            "http://placehold.it/149x150",
+            "http://placehold.it/149x149",
+            "http://placehold.it/150x150"];
+        var curImage = 0;
+        setInterval(delayFunction, rotateEvery*1000);
+        function delayFunction() {
+          if(curImage == images.length){
+            curImage = 0;
+          }
+          $('.bg-loop').fadeOut('slow',function(){
+            $(this).css("background-image",'url('+images[curImage]+')').fadeIn('slow');
+              curImage++;
+          });
+
+        }
+    });
+</script>

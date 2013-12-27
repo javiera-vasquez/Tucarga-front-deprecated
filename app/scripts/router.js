@@ -5,20 +5,22 @@ App.Router.map(function () {
     //Directorio transportistas
     this.resource('directorio');
 
-    // Log-in
-    this.resource('iniciar-sesion');
-
     // Registro de usuario
     this.resource('registrar');
 
     // Cotizar
     this.resource('cotizar');
 
+    // Como funciona
+    this.resource('como_funciona', function(){
+        this.resource('cargadores');
+        this.resource('transportistas');
+    });
+
     // Nosotros
     this.resource('nosotros', function(){
         this.resource('contacto');
-        this.resource('faq');
-        this.resource('como-funciona');
+        this.resource('ayuda');
     });
 });
 

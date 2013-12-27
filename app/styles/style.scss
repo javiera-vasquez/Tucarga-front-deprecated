@@ -76,11 +76,22 @@ $shadow : rgba(0, 0, 0, 0.2);
 
 // Footer
 #footer {
-    margin-top: 2em;
-    border-top: 1px solid $ccc;
-    background: $white;
 }
 
+// Index
+#intro-index {
+    background-color: #e7eac1;
+    .bg-loop {
+        height: 200px;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-image: url(http://placehold.it/150x150);
+    }
+}
+
+#como-index {
+    background-color: $white;
+}
 
 // Content page
 #content-page {
