@@ -82,11 +82,27 @@ $shadow : rgba(0, 0, 0, 0.2);
 // Index
 #intro-index {
     background-color: #e7eac1;
-    .bg-loop {
-        height: 200px;
-        background-position: left;
-        background-repeat: no-repeat;
-        background-image: url(http://placehold.it/150x150);
+    #bg-loop {
+        @include left;
+        background: url(/images/bg-slider.jpg) no-repeat 0 0;
+        width: 374px;
+        height: 282px;
+        img {
+            position: absolute;
+            z-index: 9999;
+        }
+        .overlay-slide {
+            width: 374px;
+            height: 282px;
+            background-position: left;
+            background-repeat: no-repeat;
+            background-image: url(/images/slider-1.png);
+        }
+    }
+    #intro-tools {
+        @include right;
+        width: 600px;
+
     }
 }
 
@@ -150,7 +166,7 @@ $shadow : rgba(0, 0, 0, 0.2);
 }
 
 .box.register {
-    background: $white url('/images/map.jpg') no-repeat center top;
+    background: $white url(/images/map.jpg) no-repeat center top;
     p {
         color: $primary-color;
         text-align: center;

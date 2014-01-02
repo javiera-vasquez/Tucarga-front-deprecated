@@ -1,14 +1,30 @@
-<div id="intro-index">
+<div id="intro-index" class="">
     <div class="row">
-        <div class="large-4 columns bg-loop"></div>
-        <div class="large-8 columns">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        <div id="bg-loop">
+            <img src="/images/cargador.png" alt="Amigo cargador">
+            <div class="overlay-slide"></div>
         </div>
+
+        <div id="intro-tools">
+            <img src="/images/tool-cargador.png" alt="Empresa cargadora">
+            <div class=" intro">
+                <h2>Más provedores, más rutas, mejores precios!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            </div>
+            <div class="cotizar">
+                <h4>¿Que operación deséas cotizar?</h4>
+                <ul class="button-group radius">
+                  <li><a href="#" class="button">Button 1</a></li>
+                  <li><a href="#" class="button">Button 2</a></li>
+                  <li><a href="#" class="button">Button 3</a></li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 </div> {{! end intro index }}
 
@@ -109,21 +125,18 @@
 <script type="text/javascript">
     $(document).ready(function() {
        // loop auto rotate
-        var rotateEvery = 3; //seconds
+        var rotateEvery = 4; //seconds
         var images = [
-            "http://placehold.it/148x148",
-            "http://placehold.it/150x149",
-            "http://placehold.it/149x150",
-            "http://placehold.it/149x149",
-            "http://placehold.it/150x150"];
+            "/images/slider-2.png",
+            "/images/slider-1.png"];
         var curImage = 0;
         setInterval(delayFunction, rotateEvery*1000);
         function delayFunction() {
           if(curImage == images.length){
             curImage = 0;
           }
-          $('.bg-loop').fadeOut('slow',function(){
-            $(this).css("background-image",'url('+images[curImage]+')').fadeIn('slow');
+          $('.overlay-slide').fadeOut('400',function(){
+            $(this).css("background-image",'url('+images[curImage]+')').fadeIn('400');
               curImage++;
           });
 
