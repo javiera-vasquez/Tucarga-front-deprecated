@@ -164,6 +164,25 @@ body {background-image: url(/images/bg.jpg);}
     }
 }
 
+#beneficios-index {
+    .box {
+        img {
+            margin: 1em 1.5em 1em 1em;
+        }
+        h5 {
+            @include bold;
+            font-size: rem-calc(18);
+        }
+        li {
+            list-style: none;
+            font-size: rem-calc(14);
+            i {
+                color: #88b43b;
+                margin-right: 10px;
+            }
+        }
+    }
+}
 
 // Content page
 #content-page {
