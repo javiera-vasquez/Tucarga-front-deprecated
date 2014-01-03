@@ -68,20 +68,30 @@
             <h4>Descubre todo lo que puedes hacer con nosotros</h4>
         </div>
     </div>
-
     <div class="row">
         <div class="large-6 columns">
-            <div class="">
-
+            <div class="box clearfix">
+                <h5>Cargadores</h5>
+                {{#link-to "cotizar" classNames="left"}}<img src="/images/step4.png" alt="Elige el mejor">{{/link-to}}
+                <ul>
+                    <li><i class="fi-check"></i>Accede al directorio de transporte más amplio de Chile.</li>
+                    <li><i class="fi-check"></i>Ahorra tiempo buscando transporte a tu medida.</li>
+                    <li><i class="fi-check"></i>Trabaja con transportista confiables y recomendados.</li>
+                    <li>{{#link-to "cargadores"}}Ver mas beneficios{{/link-to}}</li>
+                </ul>
             </div>
         </div>
         <div class="large-6 columns">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <div class="box clearfix">
+                <h5>Transportistas</h5>
+                {{#link-to "registrar" classNames="left"}}<img src="/images/step4.png" alt="Elige el mejor">{{/link-to}}
+                <ul>
+                    <li><i class="fi-check"></i>Trabaja con clientes confiables y recomendados.</li>
+                    <li><i class="fi-check"></i>Nosotros te avisamos cada ves que tengas una oferta.</li>
+                    <li><i class="fi-check"></i>Aumenta el volumen de carga y retornos vacios.</li>
+                    <li>{{#link-to "transportistas"}}Ver mas beneficios{{/link-to}}</li>
+                </ul>
+            </div>
         </div>
     </div>
 </div> {{! end beneficios }}
