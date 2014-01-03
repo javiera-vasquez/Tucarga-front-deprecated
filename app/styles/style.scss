@@ -57,6 +57,8 @@ $shadow : rgba(0, 0, 0, 0.2);
         );
 }
 
+// Base styles;
+body {background-image: url(/images/bg.jpg);}
 
 // Header
 #header {
@@ -82,6 +84,7 @@ $shadow : rgba(0, 0, 0, 0.2);
 // Index
 #intro-index {
     background-color: #e7eac1;
+    padding: 2em 0;
     #bg-loop {
         @include left;
         background: url(/images/bg-slider.jpg) no-repeat 0 0;
@@ -89,7 +92,7 @@ $shadow : rgba(0, 0, 0, 0.2);
         height: 282px;
         img {
             position: absolute;
-            z-index: 9999;
+            z-index: 10;
         }
         .overlay-slide {
             width: 374px;
@@ -102,12 +105,63 @@ $shadow : rgba(0, 0, 0, 0.2);
     #intro-tools {
         @include right;
         width: 600px;
+        img {margin-left: -25px;}
+        .intro {
+            h2 {
+                font-size: rem-calc(30);
+            }
+            p {
+                font-size: rem-calc(15);
+                margin-bottom:  0.5em;
+            }
+        }
+        .cotizar {
+            margin-top: 0.5em;
+            h4 {
+                font-weight: 300;
+                font-size: rem-calc(18);
+            }
+        }
+    }
+}
 
+#como-index, #testimonios-index, #beneficios-index, #contacto-index  {
+    padding: 2em 0;
+}
+
+#como-index, #testimonios-index {
+    background-color: $white;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.title-section {
+    text-align: center;
+    margin-bottom: 2em;
+    h2 {
+        font-size: rem-calc(30);
+        line-height: 1;
+    }
+    h4 {
+        font-size: rem-calc(18);
+        font-weight: 300;
     }
 }
 
 #como-index {
-    background-color: $white;
+    img {
+        display: block;
+        margin: auto;
+    }
+    h5 {
+        @include bold;
+        margin: 1em 0 0.3em;
+        text-align: center;
+        font-size: rem-calc(18);
+    }
+    p {
+        text-align: center;
+        font-size: rem-calc(14);
+    }
 }
 
 

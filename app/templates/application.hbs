@@ -1,44 +1,45 @@
-<nav id="header" class="top-bar" data-topbar>
-    <ul class="title-area">
-      <li class="name">
-        <h1><a href="#">Tu carga</a></h1>
-      </li>
-    </ul>
-
-    <section class="top-bar-section">
-      {{! Right Nav Section }}
-      <ul class="right">
-        <li></li>
-        <li>{{#link-to "cotizar" classNames='button radius create'}}Crea una cotización{{/link-to}}</li>
-      </ul>
-
-      {{! Left Nav Section }}
-      <ul class="left">
-        <li>{{#link-to "index"}}Inicio{{/link-to}}</li>
-        <li>{{#link-to "directorio"}}Directorio de transporte{{/link-to}}</li>
-        <li class="has-dropdown">
-          <a <href="#">Como funciona</a>
-          <ul class="dropdown">
-            <li>{{#link-to "cargadores"}}Cargadores{{/link-to}}</li>
-            <li>{{#link-to "transportistas"}}Transportistas{{/link-to}}</li>
-          </ul>
-        </li>
-        <li class="has-dropdown">
-          <a <href="#">Sobre Tucarga</a>
-          <ul class="dropdown">
-            <li>{{#link-to "ayuda"}}Preguntas frecuentes{{/link-to}}</li>
-            <li>{{#link-to "contacto"}}Contacto{{/link-to}}</li>
-          </ul>
+<header class="fixed">
+  <nav id="header" class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">Tu carga</a></h1>
         </li>
       </ul>
-    </section>
-</nav>
+
+      <section class="top-bar-section">
+        {{! Right Nav Section }}
+        <ul class="right">
+          <li></li>
+          <li>{{#link-to "cotizar" classNames='button radius create'}}Cotiza aqui{{/link-to}}</li>
+        </ul>
+
+        {{! Left Nav Section }}
+        <ul class="left">
+          <li>{{#link-to "index"}}Inicio{{/link-to}}</li>
+          <li>{{#link-to "directorio"}}Directorio de transporte{{/link-to}}</li>
+          <li class="has-dropdown">
+            <a <href="#">Como funciona</a>
+            <ul class="dropdown">
+              <li>{{#link-to "cargadores"}}Cargadores{{/link-to}}</li>
+              <li>{{#link-to "transportistas"}}Transportistas{{/link-to}}</li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a <href="#">Sobre Tucarga</a>
+            <ul class="dropdown">
+              <li>{{#link-to "ayuda"}}Preguntas frecuentes{{/link-to}}</li>
+              <li>{{#link-to "contacto"}}Contacto{{/link-to}}</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+  </nav>
+</header>
 {{outlet}}
 
-
-<div id="footer">
+<footer>
   <div class="row">
     <div class="large-12 columns">
     </div>
   </div>
-</div>
+</footer>
