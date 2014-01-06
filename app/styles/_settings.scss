@@ -564,12 +564,12 @@ $input-font-size: rem-calc(13);
 // We use these to control the left/right nav styles
 // $orbit-nav-bg: none;
 // $orbit-nav-bg-hover: rgba(0,0,0,0.3);
-// $orbit-nav-arrow-color: #fff;
+$orbit-nav-arrow-color: #cccccc;
 // $orbit-nav-arrow-color-hover: #fff;
 
 // We use these to control the timer styles
 // $orbit-timer-bg: rgba(255,255,255,0.3);
-// $orbit-timer-show-progress-bar: true;
+$orbit-timer-show-progress-bar: false;
 
 // We use these to control the bullet nav styles
 // $orbit-bullet-nav-color: #ccc;

@@ -6,6 +6,7 @@
             <div class="overlay-slide"></div>
         </div>
 
+
         <div id="intro-tools">
             <img src="/images/tool-cargador.png" alt="Empresa cargadora">
             <div class=" intro">
@@ -69,7 +70,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="large-6 columns">
+        <div class="large-6 medium-6 columns">
             <div class="box clearfix">
                 <h5>Cargadores</h5>
                 {{#link-to "cotizar" classNames="left"}}<img src="/images/cargador.jpg" alt="Cotiza ahora">{{/link-to}}
@@ -81,7 +82,7 @@
                 </ul>
             </div>
         </div>
-        <div class="large-6 columns">
+        <div class="large-6 medium-6 columns">
             <div class="box clearfix">
                 <h5>Transportistas</h5>
                 {{#link-to "registrar" classNames="left"}}<img src="/images/transportista.jpg" alt="Elige el mejor">{{/link-to}}
@@ -98,33 +99,61 @@
 
 <div id="testimonios-index">
     <div class="row">
+        <div class="large-12 columns title-section">
+            <h2>Clientes que confian en nosotros</h2>
+        </div>
+    </div>
+    <div class="row">
         <div class="large-12 columns">
             <ul class="example-orbit-content" data-orbit>
               <li data-orbit-slide="headline-1">
-                <div>
-                  <h2>Headline 1</h2>
-                  <h3>Subheadline</h3>
-                </div>
+                  <div class="margin">
+                    <div class="row">
+                        <div class="large-6 medium-6 columns">
+                            <img src="/images/logo.jpg" alt="Cotiza ahora">
+                            <blockquote>Those people who think they know everything are a great annoyance to those of us who do.<cite>Pepito Perez, Gerente General</cite></blockquote>
+                        </div>
+                        <div class="large-6 medium-6 columns">
+                            <img src="/images/logo.jpg" alt="Cotiza ahora">
+                            <blockquote>Those people who think they know everything are a great annoyance to those of us who do.<cite>Pepito Perez, Gerente General</cite></blockquote>
+                        </div>
+                    </div>
+                  </div>
               </li>
               <li data-orbit-slide="headline-2">
-                <div>
-                  <h2>Headline 2</h2>
-                  <h3>Subheadline</h3>
-                </div>
+                  <div class="margin">
+                    <div class="row">
+                        <div class="large-6 medium-6 columns">
+                            <img src="/images/logo.jpg" alt="Cotiza ahora">
+                            <blockquote>Those people who think they know everything are a great annoyance to those of us who do.<cite>Pepito Perez, Gerente General</cite></blockquote>
+                        </div>
+                        <div class="large-6 medium-6 columns">
+                            <img src="/images/logo.jpg" alt="Cotiza ahora">
+                            <blockquote>Those people who think they know everything are a great annoyance to those of us who do.<cite>Pepito Perez, Gerente General</cite></blockquote>
+                        </div>
+                    </div>
+                  </div>
               </li>
-              <li data-orbit-slide="headline-3">
-                <div>
-                  <h2>Headline 3</h2>
-                  <h3>Subheadline</h3>
-                </div>
-              </li>
-            </ul>
         </div>
     </div>
 </div> {{! end testimonios }}
 
 <div id="ayuda-index">
-
+    <div class="row">
+        <div class="large-12 columns title-section">
+            <h2>¿Tienes dudas?</h2>
+            <h4>En Tucarga siempre estamos dispuesto a ayudarte, habla con nosotros</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-12 columns clearfix">
+            <ul>
+                <li>{{#link-to "contacto"}}Contacto{{/link-to}}</li>
+                <li>{{#link-to "contacto"}}Preguntas frecuentes{{/link-to}}</li>
+                <li>{{#link-to "transportistas"}}Como funciona{{/link-to}}</li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 <script type="text/javascript">

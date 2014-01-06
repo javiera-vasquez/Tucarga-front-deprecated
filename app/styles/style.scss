@@ -125,7 +125,7 @@ body {background-image: url(/images/bg.jpg);}
     }
 }
 
-#como-index, #testimonios-index, #beneficios-index, #contacto-index  {
+#como-index, #testimonios-index, #beneficios-index, #contacto-index , #ayuda-index {
     padding: 2em 0;
 }
 
@@ -180,6 +180,33 @@ body {background-image: url(/images/bg.jpg);}
                 color: #88b43b;
                 margin-right: 10px;
             }
+        }
+    }
+}
+
+#testimonios-index {
+    .orbit-timer, .orbit-slide-number {@include none;}
+    .margin {margin: 0 3em;}
+    img {
+        display: block;
+        margin: auto;
+    }
+    blockquote {
+        margin: 1em 0;
+        border-left: none;
+        padding: 0;
+    }
+}
+
+#ayuda-index {
+    ul {
+        list-style:none;
+        margin:0;
+        padding:0;
+        text-align:center;
+        li {
+            display: inline-block;;
+            list-style: none;
         }
     }
 }
