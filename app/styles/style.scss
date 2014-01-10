@@ -231,6 +231,13 @@ footer {
 #beneficios-index {
     background: url(/images/bg-beneficios.jpg) center bottom;
     .box {
+        padding: 0;
+        .cargador, .transportista {
+            min-height: 245px;
+            padding: 1em 1em 0.1em;
+        }
+        .cargador {background:  url(/images/cargador-2.jpg) right bottom no-repeat;}
+        .transportista {background:  url(/images/transportista-2.jpg) right bottom no-repeat;}
         img {
             margin: 1em 1.5em 1em 1em;
         }
@@ -238,12 +245,18 @@ footer {
             @include bold;
             font-size: rem-calc(18);
         }
-        li {
-            list-style: none;
-            font-size: rem-calc(14);
-            i {
-                color: #88b43b;
-                margin-right: 10px;
+        ul {
+            margin-right: 5em;
+            li {
+                list-style: none;
+                font-size: rem-calc(14);
+                line-height: 1.6;
+                margin-bottom: 10px;
+                i {
+                    position: absolute;
+                    left: 28px;
+                    color: #88b43b;
+                }
             }
         }
     }
