@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="css/foundation-icons.css">
         <!-- endbuild -->
+
 </head>
     <body>
         <!-- build:js scripts/components.js -->
@@ -28,7 +29,13 @@
         <!-- build:js scripts/plugins.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <script src="bower_components/foundation/js/foundation.js"></script>
-        <script src="scripts/dom.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(document).foundation();
+            });
+        </script>
+
         <!-- endbuild -->
-</body>
+    </body>
 </html>

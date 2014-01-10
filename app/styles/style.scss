@@ -57,69 +57,105 @@ $shadow : rgba(0, 0, 0, 0.2);
         );
 }
 
-// Base styles;
-body {background-image: url(/images/bg.jpg);}
-
 // Header
 #header {
     box-shadow: $basic-box-shadow;
+    .name {
+        img {margin: 18px 10px 0 15px;}
+    }
     .top-bar-section {
         a.active {
             font-weight: bold;
             color: $primary-color;
         }
+        li .lvl1 {padding: 0 15px;}
         .dropdown {
              box-shadow: $basic-box-shadow;
         }
         .register {margin-right: 15px; }
+        .talk {
+            @include bold;
+            background: url(/images/cel.jpg) left no-repeat;
+            padding-left: 35px;
+            margin-right: 50px;
+            margin-top: 21px;
+            font-size: rem-calc(13);
+            line-height: 1;
+            span {
+                @include normal;
+                font-size: rem-calc(11);
+                text-transform: uppercase;
+                color: #555;
+            }
+        }
+        .button.create {
+            @include basic-button(
+                $secondary,
+                $white,
+                14,
+                15
+                );
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 10px;
+            right: 20px;
+        }
     }
 }
 
 
 // Footer
-#footer {
+footer {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    background: $white;
+    margin: 6em 0 0;
+    padding: 2em 0 1em;
+    ul {
+        li {
+            list-style: none;
+            line-height: 1;
+            font-size: rem-calc(13);
+            a {
+                color: $body-font-color;
+                &:hover {color: $primary-color;}
+            }
+        }
+    }
+    .right-text {
+        text-align: right;
+    }
 }
 
 
 // Index
 #intro-index {
-    background-color: #e7eac1;
-    padding: 2em 0;
-    #bg-loop {
-        @include left;
-        background: url(/images/bg-slider.jpg) no-repeat 0 0;
-        width: 374px;
-        height: 282px;
-        img {
-            position: absolute;
-            z-index: 10;
-        }
-        .overlay-slide {
-            width: 374px;
-            height: 282px;
-            background-position: left;
-            background-repeat: no-repeat;
-            background-image: url(/images/slider-1.png);
-        }
+    background: url(/images/bg-intro.jpg)  bottom center;
+    .row  {
+        background: url(/images/cargador-intro.png)  no-repeat bottom right;
+        padding: 3em 0;
     }
     #intro-tools {
-        @include right;
-        width: 600px;
-        img {margin-left: -25px;}
+
         .intro {
             h2 {
+                @include bold;
+                text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
                 font-size: rem-calc(30);
+                margin: 0.3em 0 0.5em;
             }
             p {
-                font-size: rem-calc(15);
-                margin-bottom:  0.5em;
+                text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+                font-size: rem-calc(14);
+                line-height: rem-calc(25);
+                margin-bottom: 0;
             }
         }
         .cotizar {
-            margin-top: 0.5em;
+            margin: 1em 0 0;
             h4 {
-                font-weight: 300;
-                font-size: rem-calc(18);
+                @include bold;
+                text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+                font-size: rem-calc(16);
             }
         }
     }
@@ -205,11 +241,22 @@ body {background-image: url(/images/bg.jpg);}
         padding:0;
         text-align:center;
         li {
-            display: inline-block;;
+            display: inline-block;
             list-style: none;
+            margin-right: 0.5em;
+            a {
+                font-size: rem-cacl(13);
+                padding: 0.5em 1em;
+                border-radius: 2px;
+                border: 2px solid $primary-color;
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.05);
+                }
+            }
         }
     }
 }
+
 
 // Content page
 #content-page {
