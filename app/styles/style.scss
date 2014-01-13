@@ -20,7 +20,6 @@
 .none {@include none;}
 .clear {clear: both;}
 
-
 // Variables
 $white: #fff;
 $ccc: #d4d5cf;
@@ -299,7 +298,6 @@ footer {
     }
 }
 
-
 // Content page
 #content-page {
     margin-top: 2em;
@@ -314,11 +312,13 @@ footer {
 }
 
 .title-page {
+    margin-bottom: 2em;
     h3 {
-        font-size: rem-calc(24);
-        line-height: 1;
-        margin-bottom: 0;
+        @include bold;
+        margin-top: 0;
+        font-size: rem-calc(30);
     }
+    h5 {margin-top: -0.7em;}
 }
 
 
@@ -328,6 +328,50 @@ footer {
         @include bold;
         text-transform: uppercase;
         font-size: rem-calc(13);
+    }
+}
+
+
+// Como funciona
+.como.vimeo {
+    margin-bottom: 2.5em;
+}
+
+.title-page.cargador, .title-page.transportista {
+    border-bottom: 1px solid $ccc;
+    padding-right: 8em;
+}
+
+.title-page.cargador {background: url(/images/cargador-como.jpg) no-repeat right top;}
+.title-page.transportista {background: url(/images/transportista-como.jpg) no-repeat right top;}
+
+.row.como-info {
+    margin-bottom: 2em;
+    ul {
+        margin-left: 0;
+        li {
+            list-style: none;
+            font-size: rem-calc(14);
+            line-height: 1.6;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            i {
+                position: absolute;
+                font-size: rem-calc(16);
+                left: 17px;
+                color: #88b43b;
+            }
+            i.number {
+                @include bold;
+                left: 13px;
+                color: $primary-color;
+                border: 1px solid $primary-color;
+                font-size: rem-calc(13);
+                line-height: 1;
+                padding: 3px 6px;
+                border-radius: 200px;
+            }
+        }
     }
 }
 
