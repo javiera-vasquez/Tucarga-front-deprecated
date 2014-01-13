@@ -347,6 +347,7 @@ footer {
 
 .row.como-info {
     margin-bottom: 2em;
+    h4 {margin-bottom: 1em;}
     ul {
         margin-left: 0;
         li {
@@ -354,7 +355,7 @@ footer {
             font-size: rem-calc(14);
             line-height: 1.6;
             padding-left: 25px;
-            margin-bottom: 10px;
+            margin-bottom: 1em;
             i {
                 position: absolute;
                 font-size: rem-calc(16);
@@ -374,7 +375,17 @@ footer {
         }
     }
 }
-
+.call-action {
+    margin-bottom: 4em;
+    h3 {
+        font-size: rem-calc(26);
+        line-height: 1.8;
+        margin-top: 0;
+    }
+    .button {
+        margin: 0.1em 0 0 0;
+    }
+}
 
 // Ad's
 .box.cotiza-ad {
