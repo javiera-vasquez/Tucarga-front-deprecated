@@ -107,7 +107,7 @@ $shadow : rgba(0, 0, 0, 0.2);
 footer {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
     background: $white;
-    margin: 6em 0 0;
+
     padding: 2em 0 1em;
     ul {
         li {
@@ -331,6 +331,55 @@ footer {
     }
 }
 
+.box.contact {
+    background: $white url(/images/call.jpg) no-repeat right bottom;
+    a {
+        @include bold;
+        display: block;
+        color: darken($body-font-color, 10%);
+        font-size: rem-calc(16);
+        margin-bottom: 1em;
+        &:hover {color: $primary-color;}
+    }
+    p {
+        font-size: rem-calc(13);
+        margin-right: 5em;
+    }
+}
+
+.nav-view {
+    background: $white;
+    box-shadow: $basic-box-shadow;
+    margin-bottom: 1.5em;
+    ul {
+        margin: 0;
+        li {
+            list-style: none;
+            a {
+                @include bold;
+                display: block;
+                color: $body-font-color;
+                font-size: rem-calc(13);
+                padding: 8px 15px;
+                line-height: 2;
+                &:hover {
+                    border-right: 3px solid #88b43b;
+                }
+            }
+            .active {
+                background: #1e84d3;
+                text-shadow: 0 1px 0 darken(#1e84d3, 10%);
+                color: $white;
+            }
+        }
+        ul li a {
+            @include normal;
+            color: lighten($body-font-color, 15%);
+            padding-left: 25px;
+        }
+    }
+}
+
 
 // Como funciona
 .como.vimeo {
@@ -360,12 +409,12 @@ footer {
                 position: absolute;
                 font-size: rem-calc(16);
                 left: 17px;
-                color: #88b43b;
+                color: $primary-color;
             }
             i.number {
                 @include bold;
                 left: 13px;
-                color: $primary-color;
+
                 border: 1px solid $primary-color;
                 font-size: rem-calc(13);
                 line-height: 1;

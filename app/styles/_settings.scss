@@ -30,7 +30,7 @@ $rem-base: 16px;
 
 // $include-html-grid-classes: $include-html-classes;
 
-// $row-width: rem-calc(1000);
+$row-width: rem-calc(1250);
 // $column-gutter: rem-calc(30);
 // $total-columns: 12;
 
@@ -120,7 +120,7 @@ $info-color: #a0d3e8;
 // $include-html-accordion-classes: $include-html-classes;
 
 // $accordion-navigation-padding: rem-calc(16);
-// $accordion-navigation-bg-color: #efefef  ;
+$accordion-navigation-bg-color: #fff  ;
 // $accordion-navigation-hover-bg-color: darken($accordion-navigation-bg-color, 5%);
 // $accordion-navigation-active-bg-color: darken($accordion-navigation-bg-color, 3%);
 // $accordion-navigation-font-color: #222;
@@ -128,7 +128,7 @@ $info-color: #a0d3e8;
 // $accordion-navigation-font-family: $body-font-family;
 
 // $accordion-content-padding: $column-gutter/2;
-// $accordion-content-active-bg-color: #fff;
+$accordion-content-active-bg-color: $body-bg;
 
 // Alert Boxes
 
