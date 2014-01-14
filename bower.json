@@ -2,8 +2,8 @@
   "name": "yo-ember",
   "version": "0.0.0",
   "dependencies": {
-    "ember": "1.0.0",
-    "ember-data-shim": "1.0.0-beta.2",
+    "ember": "1.3.0",
+    "ember-data-shim": "1.0.0-beta.5",
     "foundation":"zurb/bower-foundation"
   },
   "devDependencies": {
