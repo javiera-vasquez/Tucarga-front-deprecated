@@ -30,25 +30,6 @@
         <script src="bower_components/modernizr/modernizr.js"></script>
         <script src="bower_components/foundation/js/foundation.js"></script>
 
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $(document).foundation();
-            });
-
-         $(window).bind("load", function () {
-            var footer = $("footer");
-            var pos = footer.position();
-            var height = $(window).height();
-            height = height - pos.top;
-            height = height - footer.height();
-            if (height > 0) {
-                footer.css({
-                    'margin-top': height + 'px'
-                });
-            }
-        });
-        </script>
-
         <!-- endbuild -->
     </body>
 </html>

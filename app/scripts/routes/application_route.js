@@ -5,11 +5,18 @@ App.DirectorioRoute = Ember.Route.extend({
   }
 });
 
-App.NosotrosRoute = Em.Route.extend({
+App.ComoFuncionaRoute = Ember.Route.extend({
+    redirect: function(){
+        this.transitionTo('transportista');
+    }
+});
+
+App.NosotrosRoute = Ember.Route.extend({
     redirect: function(){
         this.transitionTo('ayuda');
     }
 });
+
 
 // Contar modelo
 //  usersCount: function(){

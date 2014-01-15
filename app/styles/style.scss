@@ -29,7 +29,7 @@ $secondary: #1e84d3;
 $header-font-family: $body-font-family;
 
 $include-open-sans: false !default;
-$basic-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+$basic-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 $shadow : rgba(0, 0, 0, 0.2);
 
 
@@ -105,9 +105,8 @@ $shadow : rgba(0, 0, 0, 0.2);
 
 // Footer
 footer {
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    border-top: 1px solid darken($body-bg, 8%);
     background: $white;
-
     padding: 2em 0 1em;
     ul {
         li {
@@ -164,7 +163,7 @@ footer {
                             $white,
                             $primary-color,
                             14,
-                            20
+                            22
                         );
                         padding: em-calc(15) em-calc(15);
                         text-shadow: none;
@@ -180,12 +179,12 @@ footer {
 }
 
 #como-index, #testimonios-index, #beneficios-index, #contacto-index , #ayuda-index {
-    padding: 2em 0;
+    padding: 3em 0;
 }
 
 #como-index, #testimonios-index {
     background-color: $white;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
 
 .title-section {
@@ -300,8 +299,8 @@ footer {
 
 // Content page
 #content-page {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    padding: 2em 0;
+    background: #f3f5f5;
 }
 
 .box {
@@ -372,10 +371,18 @@ footer {
                 color: $white;
             }
         }
-        ul li a {
-            @include normal;
-            color: lighten($body-font-color, 15%);
-            padding-left: 25px;
+        ul li {
+            a {
+                @include normal;
+                color: lighten($body-font-color, 15%);
+                padding-left: 25px;
+            }
+            .active {
+                background: $white;
+                text-shadow: none;
+                color: $body-font-color;
+                border-right: 3px solid #88b43b;
+            }
         }
     }
 }

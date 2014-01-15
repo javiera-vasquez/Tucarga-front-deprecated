@@ -11,8 +11,11 @@ App.Router.map(function () {
     // Cotizar
     this.resource('cotizar');
 
-    // Cotizar
-    this.resource('como_funciona');
+    // Como funciona
+    this.resource('como_funciona', function(){
+        this.resource('cargador');
+        this.resource('transportista');
+    });
 
     // Nosotros
     this.resource('nosotros', function(){

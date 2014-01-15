@@ -1,12 +1,13 @@
-<div id="content-page" class="row">
+<div id="content-page">
+    <div  class="row">
 
     <div id="sidebar" class="large-3 medium-4 columns">
         <div class="nav-view">
             <ul>
                 <li>{{#link-to "como_funciona"}}Como funciona{{/link-to}}</li>
                 <ul>
-                    <li><a href="#como-cargador">Cargadora</a></li>
-                    <li><a href="#como-transportista">Transportista</a></li>
+                    <li>{{#link-to "cargador"}}Cargador{{/link-to}}</li>
+                    <li>{{#link-to "transportista"}}Transportista{{/link-to}}</li>
                 </ul>
                 <li>{{#link-to "ayuda"}}Preguntas Frecuentes{{/link-to}}</li>
                 <li>{{#link-to "contacto"}}Contacto{{/link-to}}</li>
@@ -34,87 +35,9 @@
           <iframe src="http://player.vimeo.com/video/73246785" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
         </div>
 
-        <div id="como-cargador">
-            <div class="title-page cargador">
-                <h3>Empresa cargadora</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi.</p>
-            </div> {{! end title page}}
-
-            <div class="row como-info">
-                <div class="large-6 columns">
-                    <h4>Beneficios</h4>
-                    <ul>
-                        <li><i class="fi-check"></i>Trabaja con clientes confiables y recomendados.</li>
-                        <li><i class="fi-check"></i>Trabaja con clientes confiables y recomendados.</li>
-                        <li><i class="fi-check"></i>Trabaja con clientes confiables y recomendados.</li>
-                        <li><i class="fi-check"></i>Trabaja con clientes confiables y recomendados.</li>
-                        <li><i class="fi-check"></i>Trabaja con clientes confiables y recomendados.</li>
-                    </ul>
-                </div>
-                <div class="large-6 columns">
-                    <h4>Como funciona</h4>
-                    <ul>
-                        <li><i class="number">1</i>Trabaja con clientes confiables y recomendados.</li>
-                        <li><i class="number">2</i>Trabaja con clientes confiables y recomendados.</li>
-                        <li><i class="number">3</i>Trabaja con clientes confiables y recomendados.</li>
-                        <li><i class="number">4</i>Trabaja con clientes confiables y recomendados.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="box call-action">
-                <div class="margin clearfix">
-                    <h3 class="left">Que estas esperando para probar Tucarga</h3>
-                    {{#link-to "cotizar" classNames='button radius right'}}Cotiza aqui{{/link-to}}
-                </div>
-            </div>
-        </div>
-
-        <div id="como-transportista">
-            <div class="title-page transportista">
-                <a id="transportista"><h3>Empresa transportista</h3></a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi.</p>
-            </div> {{! end title page}}
-
-            <div class="row como-info">
-                <div class="large-6 columns">
-                    <h4>Beneficios</h4>
-                    <ul>
-                        <li><i class="fi-check"></i>Trabaja con clientes confiables y recomendados.</li>
-                        <li><i class="fi-check"></i>Trabaja con clientes confiables y recomendados.</li>
-                        <li><i class="fi-check"></i>Trabaja con clientes confiables y recomendados.</li>
-                        <li><i class="fi-check"></i>Trabaja con clientes confiables y recomendados.</li>
-                        <li><i class="fi-check"></i>Trabaja con clientes confiables y recomendados.</li>
-                    </ul>
-                </div>
-                <div class="large-6 columns">
-                    <h4>Como funciona</h4>
-                    <ul>
-                        <li><i class="number">1</i>Trabaja con clientes confiables y recomendados.</li>
-                        <li><i class="number">2</i>Trabaja con clientes confiables y recomendados.</li>
-                        <li><i class="number">3</i>Trabaja con clientes confiables y recomendados.</li>
-                        <li><i class="number">4</i>Trabaja con clientes confiables y recomendados.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="box call-action">
-                <div class="margin clearfix">
-                    <h3 class="left">Unete al club de transporte de Chile</h3>
-                    {{#link-to "registrar" classNames='button radius right'}}Click aqui{{/link-to}}
-                </div>
-            </div>
-        </div>
-
-
+        {{outlet}}
     </div> {{! end content view }}
 
+    </div>
 </div> {{! end content page }}
-
-<script type="text/javascript">
-</script>
 
