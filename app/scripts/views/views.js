@@ -6,5 +6,8 @@ Ember.View.reopen({
   },
   afterRenderEvent : function(){
     $(document).foundation();
+    $('.has-dropdown a.false').click(function() {
+        return false;
+    })
   }
 });

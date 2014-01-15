@@ -25,6 +25,7 @@ $white: #fff;
 $ccc: #d4d5cf;
 $lvl2: #898989;
 $secondary: #1e84d3;
+$grey: #f3f5f5;
 
 $header-font-family: $body-font-family;
 
@@ -182,10 +183,8 @@ footer {
     padding: 3em 0;
 }
 
-#como-index, #testimonios-index {
-    background-color: $white;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-}
+#como-index, #testimonios-index {box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);}
+#ayuda-index {background: $grey; }
 
 .title-section {
     text-align: center;
@@ -283,14 +282,17 @@ footer {
         li {
             display: inline-block;
             list-style: none;
-            margin-right: 0.5em;
+            line-height: 1;
+            margin: 1em 0.5em;
             a {
                 font-size: rem-cacl(13);
+                line-height: 1;
                 padding: 0.5em 1em;
                 border-radius: 2px;
                 border: 2px solid $primary-color;
                 &:hover {
-                    background-color: rgba(0, 0, 0, 0.05);
+                    background: $primary-color;
+                    color: $white;
                 }
             }
         }
@@ -299,8 +301,8 @@ footer {
 
 // Content page
 #content-page {
-    padding: 2em 0;
-    background: #f3f5f5;
+    padding: 2em 0 4em;
+    background: $grey;
 }
 
 .box {
@@ -316,6 +318,7 @@ footer {
         @include bold;
         margin-top: 0;
         font-size: rem-calc(30);
+        margin-bottom: 0.7em;
     }
     h5 {margin-top: -0.7em;}
 }
@@ -509,8 +512,27 @@ footer {
 }
 
 
-
-
+// Accordion
+.accordion {
+    dd a {
+        font-weight: 300;
+        box-shadow: $basic-box-shadow;
+        &:hover {
+            background: $primary-color;
+            color: $white;
+            text-shadow: 0 1px 0 darken($primary-color, 10%);
+        }
+    }
+    dd .content {
+        padding: 1.5em 1em;
+        box-shadow: inset 0 1px 2px $shadow;
+        p {
+            font-size: rem-calc(14);
+            line-height: 1.8;
+            margin-bottom: 0;
+        }
+    }
+}
 
 
 
