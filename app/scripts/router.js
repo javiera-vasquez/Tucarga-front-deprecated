@@ -1,12 +1,14 @@
 App.Router.map(function () {
     // Inicio
-    this.resource('index', { path: '/' });
+    this.route('index', { path: '/' });
 
     //Directorio transportistas
     this.resource('directorio');
 
     // Registro de usuario
-    this.resource('registrar');
+    this.resource('registrar', function(){
+        this.resource('gracias');
+    });
 
     // Cotizar
     this.resource('cotizar');

@@ -11,3 +11,11 @@ Ember.View.reopen({
     })
   }
 });
+
+App.DirectorioView = Ember.View.extend({
+  didInsertElement : function(){
+    this._super();
+        var loopAd = $('#ad-loop').clone();
+        $('.loop-list:first-child').after(loopAd);
+  }
+});

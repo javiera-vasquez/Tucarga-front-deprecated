@@ -1,9 +1,49 @@
-// Filtros de transportista
-App.Filters = DS.Model.extend({
-    from : DS.attr(),
-    to : DS.attr(),
-    type : DS.attr()
+// string, number, boolean, and date
+
+// Registro de transportistas
+App.Registro = DS.Model.extend({
+    // Datos empresa
+    type : DS.attr('string'),
+    company : DS.attr('string'),
+    razonName : DS.attr('string'),
+    rut : DS.attr('number'),
+    creationDate : DS.attr('date'),
+    address : DS.attr('string'),
+    addressNumber : DS.attr('number'),
+    addressOffice : DS.attr('string'),
+    commune : DS.attr('string'),
+    city : DS.attr('string'),
+    region : DS.attr('string'),
+    // Datos segun tipo
+    truckNumber : DS.attr('number'),
+    storageType : DS.attr('string'),
+    storageCapacity : DS.attr('number'),
+    // Usuario
+    firstName : DS.attr('string'),
+    lastName : DS.attr('string'),
+    jobTittle : DS.attr('string'),
+    mail : DS.attr('string'),
+    phone : DS.attr('number'),
+    celPhone : DS.attr('number')
+    // Traigo el usuario
+    //user : DS.belongsTo('user')
 });
+
+// App.Cotizacion = DS.Model.extend({
+//     user : DS.belongsTo('user')
+// });
+
+// App.User = DS.Model.extend({
+//     firstName : DS.attr('string'),
+//     lastName : DS.attr('string'),
+//     jobTittle : DS.attr('string'),
+//     mail : DS.attr('string'),
+//     phone : DS.attr('number'),
+//     celPhone : DS.attr('number'),
+//     // Linkeo a modelo registro y cotizacion
+//     registro : DS.belongsTo('registro'),
+//     cotizacion : DS.belongsTo('cotizacion')
+// });
 
 // Listado de transportista
 App.Transportistas = DS.Model.extend({
@@ -13,6 +53,14 @@ App.Transportistas = DS.Model.extend({
     suply: DS.attr()
 });
 
+// Filtros de transportista
+App.Filters = DS.Model.extend({
+    from : DS.attr(),
+    to : DS.attr(),
+    type : DS.attr()
+});
+
+// FIXTURES
 App.Filters.FIXTURES = [{
     id: 1,
     from: [

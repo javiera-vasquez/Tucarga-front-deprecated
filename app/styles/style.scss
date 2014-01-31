@@ -26,6 +26,7 @@ $ccc: #d4d5cf;
 $lvl2: #898989;
 $secondary: #1e84d3;
 $grey: #f3f5f5;
+$green: #88b43b;
 
 $header-font-family: $body-font-family;
 
@@ -55,6 +56,13 @@ $shadow : rgba(0, 0, 0, 0.2);
         15,
         35
         );
+}
+
+
+// Form
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+    border-radius: 2px;
 }
 
 // Header
@@ -252,7 +260,7 @@ footer {
                 i {
                     position: absolute;
                     left: 28px;
-                    color: #88b43b;
+                    color: $green;
                 }
             }
         }
@@ -364,7 +372,7 @@ footer {
                 padding: 8px 15px;
                 line-height: 2;
                 &:hover {
-                    border-right: 3px solid #88b43b;
+                    border-right: 3px solid $green;
                 }
             }
             .active {
@@ -383,7 +391,7 @@ footer {
                 background: $white;
                 text-shadow: none;
                 color: $body-font-color;
-                border-right: 3px solid #88b43b;
+                border-right: 3px solid $green;
             }
         }
     }
@@ -532,6 +540,88 @@ footer {
         }
     }
 }
+
+
+// Registro
+#form {
+    background: $white;
+    box-shadow: $basic-box-shadow;
+    border-top: 3px solid $primary-color;
+    #content-view {
+        margin: 3em 0 5em;
+        .title-page {
+            margin-bottom: 3em;
+            border-bottom: 1px solid $ccc;
+            h3 {margin-bottom: 0;}
+        }
+        .form-layout {
+            .row {margin-bottom: 0.3em;}
+            label {
+                @include bold;
+                font-size: rem-calc(14);
+            }
+            .step {
+                margin-left: -50px;
+                span {
+                    background: $primary-color;
+                    color: $white;
+                    border-radius: 50px;
+                    margin-right: 20px;
+                }
+            }
+        }
+        .why {
+            border-radius: 2px;
+            border: 1px solid $ccc;
+            margin-left: 1em;
+            h5 {
+                @include bold;
+                font-size: rem-calc(16);
+                border-bottom: 1px solid $ccc;
+                padding: 0.5em 1em;
+            }
+            ul {
+                margin: 0.8em 1em;
+                li {
+                    list-style: none;
+                    font-size: rem-calc(13);
+                    margin-left: 20px;
+                    margin-bottom: 0.5em;
+                    i {
+                        color: $green;
+                        position: absolute;
+                        margin-left: -20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
