@@ -5,9 +5,9 @@ App.DirectorioRoute = Ember.Route.extend({
   }
 });
 
-App.RegistrarRoute = Ember.Route.extend({});
+App.RegistrorRoute = Ember.Route.extend({});
 
-App.RegistrarController = Ember.ArrayController.extend({
+App.RegistroController = Ember.ArrayController.extend({
     actions: {
       saveRegistro: function() {
            var registro = this.store.createRecord('registro', {

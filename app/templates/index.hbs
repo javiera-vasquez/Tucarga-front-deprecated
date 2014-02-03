@@ -155,23 +155,23 @@ temporada? Tienes un servicio de carga regular? Quieres conocer nuevos proveedor
 </div>
 
 <script type="text/javascript">
-    $(document).ready(function() {
-       // loop auto rotate
-        var rotateEvery = 4; //seconds
-        var images = [
-            "/images/slider-2.png",
-            "/images/slider-1.png"];
-        var curImage = 0;
-        setInterval(delayFunction, rotateEvery*1000);
-        function delayFunction() {
-          if(curImage == images.length){
-            curImage = 0;
-          }
-          $('.overlay-slide').fadeOut('400',function(){
-            $(this).css("background-image",'url('+images[curImage]+')').fadeIn('400');
-              curImage++;
-          });
+//     $(document).ready(function() {
+//        // loop auto rotate
+//         var rotateEvery = 4; //seconds
+//         var images = [
+//             "/images/slider-2.png",
+//             "/images/slider-1.png"];
+//         var curImage = 0;
+//         setInterval(delayFunction, rotateEvery*1000);
+//         function delayFunction() {
+//           if(curImage == images.length){
+//             curImage = 0;
+//           }
+//           $('.overlay-slide').fadeOut('400',function(){
+//             $(this).css("background-image",'url('+images[curImage]+')').fadeIn('400');
+//               curImage++;
+//           });
 
-        }
-    });
+//         }
+//     });
 </script>

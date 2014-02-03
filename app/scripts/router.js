@@ -6,7 +6,7 @@ App.Router.map(function () {
     this.resource('directorio');
 
     // Registro de usuario
-    this.resource('registrar', function(){
+    this.resource('registro', function(){
         this.resource('gracias');
     });
 
