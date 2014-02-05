@@ -7,6 +7,13 @@
                 <h5 class="subheader">Crea una cotización nosotros nos encargamos del resto</h5>
             </div> {{! end title page}}
 
+            {{input type="text" value=name  placeholder=""}}
+            {{input type="text" value=fecha  placeholder=""}}
+            {{input type="text" value=lugar  placeholder=""}}
+
+            <button {{action 'saveCotizacion'}} class="button success large-12">
+                Enviar solicitud
+            </button>
 
         </div> {{! end centered}}
     </div>

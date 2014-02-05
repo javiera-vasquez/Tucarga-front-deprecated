@@ -1,5 +1,4 @@
 // string, number, boolean, and date
-
 // Registro de transportistas
 App.Registro = DS.Model.extend({
     // Datos empresa
@@ -27,6 +26,13 @@ App.Registro = DS.Model.extend({
     celPhone : DS.attr('number')
     // Traigo el usuario
     //user : DS.belongsTo('user')
+});
+
+// Cotización
+App.Cotizacion = DS.Model.extend({
+    name: DS.attr('string'),
+    fecha: DS.attr('string'),
+    lugar: DS.attr('string')
 });
 
 // App.Cotizacion = DS.Model.extend({

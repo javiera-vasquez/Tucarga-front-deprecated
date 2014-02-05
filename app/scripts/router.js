@@ -11,7 +11,9 @@ App.Router.map(function () {
     });
 
     // Cotizar
-    this.resource('cotizar');
+    this.resource('cotizar', function(){
+        this.route('gracias');
+    });
 
     // Como funciona
     this.resource('como_funciona', function(){

@@ -5,15 +5,43 @@ App.DirectorioRoute = Ember.Route.extend({
   }
 });
 
-App.RegistrorRoute = Ember.Route.extend({});
+// Cotizar
+App.CotizarRoute = Ember.Route.extend({
+    model: function() {
+        return this.store.createRecord('cotizacion');
+    }
+});
+
+App.CotizarController =Ember.ObjectController.extend({
+    actions: {
+        // crear objeto cotizacion
+        saveCotizacion: function() {
+            var cotizar = this.store.createRecord('cotizacion', {
+                name: this.get('name'),
+                fecha: this.get('fecha'),
+                lugar: this.get('lugar')
+            });
+            // post de la cotizacion
+            var controller = this;
+            cotizar.save().then(function(cotizar){});
+            // #link-to
+            this.transitionToRoute('exito');
+        }
+    }
+});
+
+// Registro
+App.RegistrorRoute = Ember.Route.extend({
+    model: function() {
+        return this.store.createRecord('registro');
+    }
+});
 
 App.RegistroController = Ember.ArrayController.extend({
     actions: {
       saveRegistro: function() {
            var registro = this.store.createRecord('registro', {
-                company: this.get('company'),
-                firstName: this.get('user.firstName'),
-                lastName: this.get('user.lastName')
+                company: this.get('company')
             });
             var controller = this;
             registro.save().then(function(registro){});
